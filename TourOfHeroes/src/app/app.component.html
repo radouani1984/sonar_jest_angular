@@ -1,0 +1,14 @@
+<div class="d-flex nav-header">
+    <h3 class="brand" [innerHtml]="title" data-role="app-title"></h3>
+    <div class="navigation">
+        <ul>
+            <li>
+                <a [routerLink]="['dashboard']">Dashboard</a>
+            </li>
+            <li>
+                <a [routerLink]="['heroes']">Heroes</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,48 @@
+ul,
+li,
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+  padding: 12px;
+}
+ul {
+  border-radius: 12px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav-header {
+  background-color: #333;
+  padding: 0 15px;
+  border-radius: 10px;
+}
+
+a,
+a:visited {
+  color: #fff;
+}
+.navigation {
+  margin-left: auto;
+}
+.brand {
+  color: #fff;
+}
+
+li a:hover {
+  background-color: #111;
+}

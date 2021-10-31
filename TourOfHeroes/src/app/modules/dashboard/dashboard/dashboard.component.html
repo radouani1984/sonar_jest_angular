@@ -1,0 +1,6 @@
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+    <ng-container *ngFor="let hero of topHeroes">
+        <a data-role='hero-item' [routerLink]="['dashboard']" [innerHtml]="hero.name"></a>
+    </ng-container>
+</div>

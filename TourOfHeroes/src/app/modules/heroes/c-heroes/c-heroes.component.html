@@ -1,0 +1,12 @@
+<div>
+    <div>
+        <ul *ngFor="let hero of heroes" class="heroes">
+            <li>
+                <a data-role="hero-item" class="d-flex">
+                    <span class="badge" data-role="hero-id" [innerHtml]="hero.id"></span>
+                    <span data-role="hero-name" [innerHtml]="hero.name"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
