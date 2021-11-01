@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HEROES } from '@data/db';
 import { Hero } from '@models/Hero';
 
@@ -7,12 +7,10 @@ import { Hero } from '@models/Hero';
   templateUrl: './c-heroes.component.html',
   styleUrls: ['./c-heroes.component.scss'],
 })
-export class CHeroesComponent implements OnInit {
+export class CHeroesComponent {
   heroes: Hero[] = [];
 
   constructor() {
     this.heroes = HEROES;
   }
-
-  ngOnInit(): void {}
 }

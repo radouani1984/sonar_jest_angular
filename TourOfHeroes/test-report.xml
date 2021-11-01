@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/home/radouani/learning/jest_course/TourOfHeroes/src/app/modules/hero-detail/hero-detail/hero-detail.component.spec.ts">
+    <testCase name="HeroDetailComponent should create" duration="117"/>
+  </file>
+  <file path="/home/radouani/learning/jest_course/TourOfHeroes/src/app/modules/heroes/c-heroes/c-heroes.component.spec.ts">
+    <testCase name="CHeroesComponent should create" duration="204"/>
+    <testCase name="CHeroesComponent should fill heroes attribute with HEROES array" duration="57"/>
+    <testCase name="CHeroesComponent should has heroes populated" duration="50"/>
+    <testCase name="CHeroesComponent should render heroes" duration="92"/>
+    <testCase name="CHeroesComponent should rander heros names and id" duration="91"/>
+  </file>
+  <file path="/home/radouani/learning/jest_course/TourOfHeroes/src/app/app.component.spec.ts">
+    <testCase name="AppComponent should create the app" duration="96"/>
+    <testCase name="AppComponent should have as title &apos;TourOfHeroes&apos;" duration="29"/>
+    <testCase name="AppComponent should render title" duration="45"/>
+  </file>
+  <file path="/home/radouani/learning/jest_course/TourOfHeroes/src/app/modules/dashboard/dashboard/dashboard.component.spec.ts">
+    <testCase name="DashboardComponent should init new instance" duration="153"/>
+    <testCase name="DashboardComponent should create" duration="40"/>
+    <testCase name="DashboardComponent should has heroes populated" duration="32"/>
+    <testCase name="DashboardComponent should render heroes" duration="50"/>
+    <testCase name="DashboardComponent should rander heros names" duration="43"/>
+  </file>
+</testExecutions>

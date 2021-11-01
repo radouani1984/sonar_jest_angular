@@ -22,14 +22,14 @@ services:
 
   sonarscanner:
     image: sonarsource/sonar-scanner-cli
-    restart: unless-stopped
+    # restart: unless-stopped
     entrypoint:
       - sonar-scanner
     # command: -Dsonar.host.url=http://sonarqube:9000 -Dsonar.jdbc.url=jdbc:h2:tcp://sonarqube/sonar -Dsonar.login=0fbecdfcf85a562565ce161ff14535140d3a746d -Dsonar.jdbc.driverClassName=org.h2.Driver -Dsonar.projectKey=demo -Dsonar.projectVersion=1 -Dsonar.embeddedDatabase.port=9092
-    command: -Dsonar.host.url=http://sonarqube:9000 -Dsonar.jdbc.url=jdbc:h2:tcp://sonarqube/sonar -Dsonar.login=0fbecdfcf85a562565ce161ff14535140d3a746d -Dsonar.jdbc.driverClassName=org.h2.Driver -Dsonar.embeddedDatabase.port=9092
+    command: -Dsonar.host.url=http://sonarqube:9000 -Dsonar.jdbc.url=jdbc:h2:tcp://sonarqube/sonar -Dsonar.login=4039ca0761351eaaaeebd1027dc8d28bd2583cce -Dsonar.jdbc.driverClassName=org.h2.Driver -Dsonar.embeddedDatabase.port=9092
 
     volumes:
-      - "./WebAppWithDatabaseDemo:/usr/src"
+      - "./TourOfHeroes:/usr/src"
     networks:
       - sonarnet
     healthcheck:
@@ -50,7 +50,8 @@ services:
       - postgresql_data:/var/lib/postgresql/data
     networks:
       - sonarnet
-
+    ports:
+      - "5432:5432"
 networks:
   sonarnet:
 volumes:

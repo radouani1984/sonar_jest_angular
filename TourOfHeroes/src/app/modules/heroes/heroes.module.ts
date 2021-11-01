@@ -1,17 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { HeroesRoutingModule } from './heroes-routing.module';
+import { NgModule } from '@angular/core';
 import { CHeroesComponent } from './c-heroes/c-heroes.component';
-
+import { HeroesRoutingModule } from './heroes-routing.module';
 
 @NgModule({
-  declarations: [
-    CHeroesComponent
-  ],
-  imports: [
-    CommonModule,
-    HeroesRoutingModule
-  ]
+  declarations: [CHeroesComponent],
+  imports: [CommonModule, HeroesRoutingModule],
 })
-export class HeroesModule { }
+export class HeroesModule {}

@@ -23,6 +23,11 @@ describe('DashboardComponent', () => {
     fixture.detectChanges();
   });
 
+  it('should init new instance', () => {
+    const c = new DashboardComponent();
+    expect(c.topHeroes).toEqual(HEROES.slice(5));
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });

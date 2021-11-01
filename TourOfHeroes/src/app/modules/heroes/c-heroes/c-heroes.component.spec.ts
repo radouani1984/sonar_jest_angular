@@ -24,6 +24,11 @@ describe('CHeroesComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should fill heroes attribute with HEROES array', () => {
+    const c = new CHeroesComponent();
+    expect(c.heroes).toEqual(HEROES);
+  });
+
   it('should has heroes populated', () => {
     fixture.detectChanges();
     expect(component.heroes[0]).toEqual(HEROES[0]);

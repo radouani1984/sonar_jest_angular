@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { HEROES } from '@data/db';
 import { Hero } from '@models/Hero';
 
@@ -7,12 +7,10 @@ import { Hero } from '@models/Hero';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss'],
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
   topHeroes: Hero[] = [];
 
   constructor() {
     this.topHeroes = HEROES.slice(5);
   }
-
-  ngOnInit(): void {}
 }

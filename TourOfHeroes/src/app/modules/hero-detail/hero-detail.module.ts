@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 @NgModule({
